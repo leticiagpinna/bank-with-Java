@@ -1,0 +1,39 @@
+package orientadoobjeto;
+
+public class nome {
+	
+	String numero;
+	String nome;
+	double quantidade;
+	
+	boolean deposito(double dinheiro) {
+		if (dinheiro > 0) {
+			quantidade = quantidade + dinheiro;
+			return true;
+		}
+		return false;
+		
+	}
+	
+	
+	boolean saque(double dinheiro) {
+		if(dinheiro>0) {
+			quantidade = quantidade - dinheiro;
+			return true;
+		}
+		return false;
+	}
+	
+	void transferencia( double dinheiro,nome destino) {
+		saque(dinheiro);
+		
+		destino.deposito(dinheiro);
+		
+		
+	}
+	void printQuantidade() {
+		
+	System.out.println("quantidade" + quantidade);
+	}
+
+}
