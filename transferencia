@@ -1,0 +1,25 @@
+package orientadoobjeto;
+
+public class transfe {
+	public static void main(String[] args) {
+		nome a = new nome();
+		a.deposito(1000);
+		
+		
+		
+		nome b = new nome();
+		b.deposito(100);
+		
+		
+		
+		a.transferencia(200, b);
+		
+		a.printQuantidade();
+		b.printQuantidade();
+		
+		
+		
+		
+	}
+
+}
