@@ -1,0 +1,25 @@
+package orientadoobjeto;
+
+public class outro {
+public static void main(String[] args) {
+	nome a= new nome();
+	boolean valido = a.deposito(-100);
+	if(!valido) {
+		System.out.println("deposito invalido");
+	}
+	a.deposito(200);
+	a.saque(50);
+	a.printQuantidade();
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+}
